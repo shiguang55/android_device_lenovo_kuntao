@@ -1,0 +1,6 @@
+tcmd                                                     	  u:object_r:tcmd_service:s0
+qseeoptservice    					       	u:object_r:qseeopt_service:s0
+qseecomoptservice    						u:object_r:qseecomopt_service:s0
+com.fingerprints.extension.sensortest.IFingerprintSensorTest     u:object_r:fingerprintd_service:s0
+com.fingerprints.extension.navigation.IFingerprintNavigation     u:object_r:fingerprintd_service:s0
+com.fingerprints.extension.engineering.IFingerprintEngineering   u:object_r:fingerprintd_service:s0

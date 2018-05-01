@@ -107,8 +107,15 @@ PRODUCT_COPY_FILES += \
 # HWUI
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-hwui-memory.mk)
 
+# IFAA (Fingerprint support for Alipay)
+PRODUCT_PACKAGES += \
+    org.ifaa.android.manager
 
+PRODUCT_BOOT_JARS += \
+    org.ifaa.android.manager
     
+PRODUCT_COPY_FILES += \
+$(LOCAL_PATH)/org.ifaa.android.manager/etc/org.ifaa.android.manager.permissions.xml:system/etc/permissions/org.ifaa.android.manager.permissions.xml
 
 # IPA Manager
 PRODUCT_PACKAGES += \
@@ -238,7 +245,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:system/etc/sensors/hals.conf
 
+# SOTER (Fingerprint support for WeChat Payment)
+PRODUCT_PACKAGES += \
+    soter
 
+PRODUCT_BOOT_JARS += \
+    soter
 
 # WiFi
 PRODUCT_PACKAGES += \

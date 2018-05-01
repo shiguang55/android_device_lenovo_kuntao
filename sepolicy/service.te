@@ -1,0 +1,3 @@
+type tcmd_service,          service_manager_type;
+type qseeopt_service,          service_manager_type;
+type qseecomopt_service,          service_manager_type;

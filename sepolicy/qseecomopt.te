@@ -1,0 +1,29 @@
+type qseecomopt, domain;
+type qseecomopt_exec, exec_type, file_type;
+
+#Allow for transition from init domain to qseecomopt
+init_daemon_domain(qseecomopt)
+
+#Allow qseecomopt to use Binder IPC
+binder_use(qseecomopt)
+
+#Allow servicemanager to interact with qseecomopt
+binder_call(qseecomopt, servicemanager)
+
+#Allow alipay_app to interact with qseecomopt
+binder_call(qseecomopt, alipay_app)
+
+#Mark qseecomopt as a Binder service domain
+binder_service(qseecomopt)
+
+#Allow qseecomopt to be registered with service manager
+allow qseecomopt qseecomopt_service:service_manager add;
+
+#Allow access to tee device
+allow qseecomopt tee_device:chr_file rw_file_perms;
+
+#Allow access to ion device
+allow qseecomopt ion_device:chr_file r_file_perms;
+
+#Allow access to firmware
+r_dir_file(qseecomopt, firmware_file)

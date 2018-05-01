@@ -1,0 +1,29 @@
+type tcmd, domain;
+type tcmd_exec, exec_type, file_type;
+
+#Allow for transition from init domain to tcmd
+init_daemon_domain(tcmd)
+
+#Allow tcmd to use Binder IPC
+binder_use(tcmd)
+
+#Allow servicemanager to interact with tcmd
+binder_call(tcmd, servicemanager)
+
+#Allow alipay_app to interact with tcmd
+binder_call(tcmd, alipay_app)
+
+#Mark tcmd as a Binder service domain
+binder_service(tcmd)
+
+#Allow tcmd to be registered with service manager
+allow tcmd tcmd_service:service_manager add;
+
+#Allow access to tee device
+allow tcmd tee_device:chr_file rw_file_perms;
+
+#Allow access to ion device
+allow tcmd ion_device:chr_file r_file_perms;
+
+#Allow access to firmware
+r_dir_file(tcmd, firmware_file)
