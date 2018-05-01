@@ -44,6 +44,7 @@ camera.display.lmax=1280x720
 camera.hal1.packagelist=com.skype.raider,com.google.android.talk
 camera.lowpower.record.enable=1
 vidc.enc.dcvs.extra-buff-count=2
+persist.camera.HAL3.enabled=1
 
 # CNE/DPM
 persist.cne.feature=1
@@ -55,7 +56,7 @@ debug.enable.sglscale=1
 debug.gralloc.enable_fb_ubwc=1
 ro.opengles.version=196610
 ro.qualcomm.cabl=0
-ro.sf.lcd_density=480
+ro.sf.lcd_density=440
 
 # DRM
 drm.service.enabled=1
@@ -93,7 +94,7 @@ rild.libpath=/system/vendor/lib64/libril-qc-qmi-1.so
 rild.libargs=-d /dev/smd0
 persist.radio.multisim.config=dsds
 persist.data.qmi.adb_logmask=0
-ro.telephony.default_network=9,1
+ro.telephony.default_network=22,20
 ro.telephony.call_ring.multiple=false
 persist.radio.sib16_support=1
 persist.radio.custom_ecc=1

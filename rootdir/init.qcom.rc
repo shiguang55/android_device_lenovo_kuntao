@@ -89,6 +89,8 @@ on boot
     # Remove SUID bit for iproute2 ip tool
     chmod 0755 /system/bin/ip
 
+    # Create directory for TZ Apps
+    mkdir /data/misc/qsee 0770 system system
     setprop net.tcp.2g_init_rwnd 10
 
     # Assign TCP buffer thresholds to be ceiling value of technology maximums
@@ -421,6 +423,10 @@ service msm_irqbalance /system/bin/msm_irqbalance -f /system/vendor/etc/msm_irqb
     user root
     group root
 
+service qseeproxydaemon /system/vendor/bin/qseeproxydaemon
+    class late_start
+    user system
+    group system
 service time_daemon /system/bin/time_daemon
     class main
     user root

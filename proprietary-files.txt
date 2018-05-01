@@ -764,3 +764,30 @@ vendor/lib/mediadrm/libwvdrmengine.so
 bin/cnss-daemon
 etc/firmware/wlan/prima/WCNSS_cfg.dat
 etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv_lenovo.bin:etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
+# ifaa(from p2c72 nougat)
+bin/tcmd
+lib/libteeclientjni.so
+lib/libteeclient.so
+lib/libifaaProductClient.so
+lib/libQseeOptService.so
+lib/libpkip.so
+lib/libQSEEComAPI.so
+lib/libtpa.so
+lib/libtzssm.so
+lib64/libteeclientjni.so
+lib64/libteeclient.so
+lib64/libifaaProductClient.so
+lib64/libQseeOptService.so
+lib64/libQSEEComAPI.so
+lib64/libtpa.so
+lib64/libtzssm.so
+app/QuickAlipay/QuickAlipay.apk
+
+# soter(from p2c72 nougat)
+bin/soter_client
+lib/libifaaProductClient.so
+lib/libsoterclient.so
+lib/libQseeOptService.so
+lib64/libifaaProductClient.so
+lib64/libsoterclient.so
+lib64/libQseeOptService.so

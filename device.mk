@@ -17,7 +17,7 @@
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-mokee
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
@@ -106,6 +106,9 @@ PRODUCT_COPY_FILES += \
 
 # HWUI
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-hwui-memory.mk)
+
+
+    
 
 # IPA Manager
 PRODUCT_PACKAGES += \
@@ -234,6 +237,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:system/etc/sensors/hals.conf
+
+
 
 # WiFi
 PRODUCT_PACKAGES += \

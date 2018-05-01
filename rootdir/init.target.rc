@@ -113,6 +113,30 @@ service ims_rtp_daemon /system/bin/ims_rtp_daemon
     group radio net_raw diag diag inet log
     disabled
 
+service fingerprintd /system/bin/fingerprintd
+    class late_start
+    user system
+    group system
+
+service tcmd /system/bin/tcmd
+    class late_start
+    user system
+    group system
+
+service soterdaemon /system/bin/soter_client
+    class late_start
+    user system
+    group system
+
+service qseeopt /system/bin/qseecom_opt_handler
+    class main
+    user system
+    disabled
+    oneshot
+
+on property:sys.boot_completed=1
+    start qseeopt
+
 service imscmservice /system/bin/imscmservice
     class main
     user system

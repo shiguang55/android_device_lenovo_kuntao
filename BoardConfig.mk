@@ -37,7 +37,7 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
 
 # Asserts
-TARGET_OTA_ASSERT_DEVICE := kuntao,kuntao_row,P2a42,p2,p2a42
+TARGET_OTA_ASSERT_DEVICE := kuntao,kuntao_row,P2a42,p2,p2a42,p2a72
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-uart"
@@ -81,11 +81,11 @@ USE_DEVICE_SPECIFIC_CAMERA := true
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
-# CMHW
-BOARD_USES_CYANOGEN_HARDWARE := true
+# MKHW
+BOARD_USES_MOKEE_HARDWARE := true
 BOARD_HARDWARE_CLASS += \
-    hardware/cyanogen/cmhw \
-    $(DEVICE_PATH)/cmhw
+    hardware/mokee/mkhw \
+    $(DEVICE_PATH)/mkhw
 
 # Encryption
 TARGET_HW_DISK_ENCRYPTION := true

@@ -15,8 +15,8 @@
 #
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 1080
-TARGET_SCREEN_WIDTH := 1920
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080
 
 # Inherit 64-bit configs
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
@@ -25,21 +25,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/mk/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/lenovo/kuntao/device.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_kuntao
+PRODUCT_NAME := mk_kuntao
 PRODUCT_DEVICE := kuntao
 PRODUCT_BRAND := Lenovo
-PRODUCT_MODEL := Lenovo P2a42
+PRODUCT_MODEL := Lenovo P2c72
 PRODUCT_MANUFACTURER := LENOVO
 
 PRODUCT_GMS_CLIENTID_BASE := android-lenovo
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT=Lenovo/kuntao_row/P2a42:7.0/NRD90N/P2a42_S251_171107_ROW:user/release-keys \
-    PRIVATE_BUILD_DESC="kuntao_row-user 7.0 NRD90N P2a42_S251_171107_ROW release-keys" \
-    TARGET_DEVICE="P2a42"
+    BUILD_FINGERPRINT=Lenovo/kuntao/kuntao:7.0/NRD90M/VIBEUI_V3.5_1743_5.2308.1_ST_P2c72:user/release-keys \
+    PRIVATE_BUILD_DESC="kuntao-user 7.0 VIBEUI_V3.5_1743_5.2308.1_ST_P2c72 release-keys" \
+    TARGET_DEVICE="kuntao"

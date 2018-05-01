@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.hardware;
+package org.mokee.hardware;
 
 import com.synaptics.fingerprint.Fingerprint;
 
