@@ -233,9 +233,11 @@ PRODUCT_PACKAGES += \
     init.qcom.early_boot.sh \
     init.qcom.rc \
     init.qcom.sh \
-    init.qcom.usb.rc \
     init.target.rc \
     fstab.qcom \
+    init.mmi.usb.rc \
+    init.msm.usb.configfs.rc \
+    init.mmi.usb.sh \
     ueventd.qcom.rc
 
 # Sensors
