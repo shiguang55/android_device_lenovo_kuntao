@@ -84,7 +84,7 @@ drm.service.enabled=true
 ro.frp.pst=/dev/block/bootdevice/by-name/config
 
 # Fp Gestures
-persist.sys.fp.navigation=1
+#persist.sys.fp.navigation=1
 
 # IMS
 persist.radio.jbims=1
