@@ -28,7 +28,7 @@ TARGET_2ND_CPU_VARIANT := cortex-a53
 TARGET_USES_64_BIT_BINDER := true
 
 # Asserts
-TARGET_OTA_ASSERT_DEVICE := P2a42,kuntao_row,p2,p2a42,kuntao
+TARGET_OTA_ASSERT_DEVICE := P2a42,kuntao_row,p2,p2a42,p2c72,kuntao
 
 # Audio
 AUDIO_FEATURE_ENABLED_ALAC_OFFLOAD := true
